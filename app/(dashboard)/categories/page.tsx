@@ -19,7 +19,7 @@ import { ArrowUpDown, Edit, Loader2, MoreHorizontal } from "lucide-react"
 type ResponseType = InferResponseType<typeof honoClient.api.categories.$get, 200>;
 type Category = ResponseType["data"][0];
 
-export const columns: ColumnDef<Category>[] = [
+const columns: ColumnDef<Category>[] = [
   {
     id: "select",
     header: ({ table }) => (

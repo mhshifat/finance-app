@@ -32,7 +32,7 @@ import useDeleteTransactions from "@/features/transactions/api/use-delete-transa
 type ResponseType = InferResponseType<typeof honoClient.api.transactions.$get, 200>;
 type Transaction = ResponseType["data"][0];
 
-export const columns: ColumnDef<Transaction>[] = [
+const columns: ColumnDef<Transaction>[] = [
   {
     id: "select",
     header: ({ table }) => (
